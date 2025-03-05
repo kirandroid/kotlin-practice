@@ -6,3 +6,9 @@ Resources -> [Kotlin Docs](https://play.kotlinlang.org/byExample/01_introduction
 - Image Composable
 - Modifiers to scale, padding and arrangements
 - Texts, Box, Column, Row
+
+Day #2
+Kotlin fundamentals -> [Kotlin Fundamentals](https://developer.android.com/courses/android-basics-compose/unit-2)
+- Conditionals
+- nullability
+- OOP concepts/Class & objects

@@ -94,12 +94,23 @@ fun businessCard(modifier: Modifier = Modifier) {
 @Composable
 fun nameCard(modifier: Modifier = Modifier) {
     val android = painterResource(R.drawable.android_logo)
-    Column(modifier = modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Bottom) {
-        Box(modifier=Modifier.padding(24.dp).background(Color.LightGray).size(100.dp)) {
+    Column(
+        modifier = modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Bottom
+    ) {
+        Box(modifier = Modifier
+            .padding(24.dp)
+            .background(Color.LightGray)
+            .size(100.dp)) {
             Image(android, contentDescription = null)
         }
         Text(stringResource(R.string.jennifer_doe), fontSize = 50.sp)
-        Text(stringResource(R.string.android_developer_extraordinaire), fontWeight = FontWeight.Bold, color = Color.Green)
+        Text(
+            stringResource(R.string.android_developer_extraordinaire),
+            fontWeight = FontWeight.Bold,
+            color = Color.Green
+        )
     }
 }
 
@@ -116,16 +127,28 @@ fun contacts(modifier: Modifier = Modifier) {
         Column(
             horizontalAlignment = Alignment.Start,
         ) {
-            Row(modifier= Modifier.padding(bottom = 16.dp)) {
-                Icon(Icons.Rounded.Call, contentDescription = null, modifier = Modifier.padding(end = 16.dp))
+            Row(modifier = Modifier.padding(bottom = 16.dp)) {
+                Icon(
+                    Icons.Rounded.Call,
+                    contentDescription = null,
+                    modifier = Modifier.padding(end = 16.dp)
+                )
                 Text("+11 (123) 444 555 666")
             }
-            Row(modifier= Modifier.padding(bottom = 16.dp)) {
-                Icon(Icons.Rounded.Share, contentDescription = null, modifier = Modifier.padding(end = 16.dp))
+            Row(modifier = Modifier.padding(bottom = 16.dp)) {
+                Icon(
+                    Icons.Rounded.Share,
+                    contentDescription = null,
+                    modifier = Modifier.padding(end = 16.dp)
+                )
                 Text("@AndroidDev")
             }
-            Row(modifier= Modifier.padding(bottom = 16.dp)) {
-                Icon(Icons.Rounded.Email, contentDescription = null, modifier = Modifier.padding(end = 16.dp))
+            Row(modifier = Modifier.padding(bottom = 16.dp)) {
+                Icon(
+                    Icons.Rounded.Email,
+                    contentDescription = null,
+                    modifier = Modifier.padding(end = 16.dp)
+                )
                 Text("jen.doe@android.com")
             }
         }
