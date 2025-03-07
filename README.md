@@ -12,3 +12,6 @@ Kotlin fundamentals -> [Kotlin Fundamentals](https://developer.android.com/cours
 - Conditionals
 - nullability
 - OOP concepts/Class & objects
+
+Day #3
+- Function Types and Lambda expressions
